@@ -28,7 +28,7 @@ To have this app on your pc, you need to:
 
   - `$ npm start` 
  
- ## LINKS
+ ## ROUTES
     GET : "/api/v1/foods" 
     GET : "/api/v1/foods/:id"'
     POST : "/api/v1/foods"
