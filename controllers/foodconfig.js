@@ -4,7 +4,7 @@ const Operations = require('../utils/Operations');
 exports.bestFoods = (req, res, next) => {
   req.query.limit = '5';
   req.query.sort = '-ratingsAverage,price';
-  req.query.fields = 'name,price,ratingsAverage,difficulty';
+  req.query.fields = 'name,price,ratingsAverage,tag';
   next();
 };
 
@@ -113,7 +113,7 @@ exports.fetchFoodStats = async (req, res) => {
       },
       {
         $group: {
-          _id: { $toUpper: '$difficulty' },
+          _id: { $toUpper: '$FoodType' },
           numFoods: { $sum: 1 },
           numRatings: { $sum: '$ratingsQuantity' },
           avgRating: { $avg: '$ratingsAverage' },
