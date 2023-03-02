@@ -27,6 +27,15 @@ To have this app on your pc, you need to:
   - `$ npm install` - installs all the dependencies required by the project
 
   - `$ npm start` 
+ 
+ ## LINKS
+    GET : "/api/v1/foods" 
+    GET : "/api/v1/foods/:id"'
+    POST : "/api/v1/foods"
+    PATCH : "/api/v1/foods/:id"
+    DELETE : "/api/v1/foods/:id"
+    GET : "/api/v1/foods/top-foods"
+    GET : "/api/v1/foods/food-stats"
   
 ## Testing
 
