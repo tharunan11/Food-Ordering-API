@@ -44,7 +44,7 @@ const foodSchema = new mongoose.Schema(
         message: 'Discount price ({VALUE}) should be below regular price'
       }
     },
-    decription: {
+    description: {
       type: String,
       trim: true
     },
